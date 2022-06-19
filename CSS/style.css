@@ -1,0 +1,259 @@
+/* Universal  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: rgb(26, 26, 26);
+    height: 100vh;
+}
+
+.text-white {
+    color: white;
+}
+.text-black {
+    color: black;
+}
+
+/* navbar  */
+
+.navbar { 
+    background-color: #f2f2f2;
+}
+.navbar-cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 100px;
+    padding: 20px;
+}
+.navbar-title ul li {
+    display: inline-block;
+    list-style: none;
+}
+.navbar-title ul li a {
+    color: black;
+    text-decoration: none;
+    text-transform:uppercase;
+    margin: 0px 10px;
+    background: linear-gradient(#fa3838,#fa3838);
+    padding: 5px;
+    background-size: 0px 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: 0.5s all ease-in-out;
+    display: inline-block;
+}
+
+.navbar-title a.active {
+    background: linear-gradient(#F9004D, #F9004D);
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.navbar-title a:hover {
+    background: linear-gradient(#F9004D, #F9004D);
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.navbar-social ul li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar-social ul li a {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+/* nav ends  */
+
+/* slider starts  */
+    .slide-container {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .left-slide {
+        position: absolute;
+        height: 100%;
+        width: 35%;
+        left: 0;
+        top: 0;
+        transition: transform ease-in-out 0.5s;
+    }
+
+    .left-slide > div {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .left-slide h1 {
+        font-size: 70px;
+    }
+
+    .left-slide p {
+        font-size: 20px
+    }
+
+    /* Right slide  */
+
+    .right-slide {
+        position: absolute;
+        height: 100%;
+        left: 35%;
+        width: 65%;
+        top: 0;
+        transition: transform ease-in-out 0.5s;
+    }
+
+    .right-slide > div {
+        height: 100%;
+        width: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     
+    }
+
+    button {
+            background-color:grey;
+            border: none;
+            color: white;
+            font-size: 30px;
+            padding: 5px;
+            border-radius: 5px;
+    }
+    button:hover {
+        color:black ;
+    }
+    /* .slide-container .actions-button button {
+        position: absolute;
+        left: 35%;
+        top: 50%;
+        z-index: 100;
+    } */
+
+    .slide-container .actions-button .up-button {
+        position: absolute;
+        left: 35%;
+        bottom: 50%;
+        z-index: 100%;
+    }
+    .slide-container .actions-button .down-button {
+        position: absolute;
+        right: 65%;
+        top: 50%;
+    }
+    
+/* slider ends  */
+
+
+/* footer  */
+
+.footer {
+    background-color: #262626;
+}
+.footer-cover {
+    margin: 30px 100px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-flex2 {
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.footer-flex2 ul {
+    list-style: none;
+}
+
+.footer-flex2 h1 {
+    font-weight: 300;
+    border-bottom: 2px solid #F9004D ;
+}
+.footer-subscribe {
+    margin-top: 10px;
+}
+.footer-subscribe-sub {
+    margin-top: 20px;
+}
+.footer-subscribe  button {
+    background-color: #F9004D;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+.footer-subscribe input {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    width: 300px;
+}
+
+.footer-subscribe p {
+    font-size: 30px;
+}
+
+.subscribe-text {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social p {
+    font-size: 30px;
+}
+
+.footer-social ul li a {
+    font-size: 40px;
+    padding: 5px;
+    color: white;
+    display: inline-block;
+}
+
+.footer-social ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+.footer-text {
+    margin-top: 10px;
+}
+
+
+.footer-text p {
+    padding: 10px;
+}
+.arrow {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    fill: white;
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    padding: 7px;
+
+}
