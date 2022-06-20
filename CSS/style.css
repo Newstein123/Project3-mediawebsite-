@@ -161,7 +161,22 @@ body {
     
 /* slider ends  */
 
+/* About us  */
 
+.aboutus-container {
+    margin: 20px 100px;
+}
+.title {
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+}
+.readmore {
+    background-color: #F9004D;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
 /* footer  */
 
 .footer {
@@ -256,4 +271,121 @@ body {
     opacity: 0;
     padding: 7px;
 
+}
+
+/* toggle */
+
+.toggle {
+    position: relative;
+    border: 2px solid #F9004D ;
+    border-radius: 5px;
+    padding: 20px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: none;
+}
+
+.toggle span {
+    position: absolute;
+    left: 5px;
+    width: 30px;
+    height: 3px;
+    background-color: #F9004D;
+    transition: 0.5s;
+}
+
+.toggle span:nth-child(1) {
+    transform: translateY(-10px);
+    width: 15px;
+}
+.toggle span:nth-child(2) {
+    transform: translateY(10px);
+    width: 15px;
+}
+.toggle.active span:nth-child(3) {
+    transform: translatex(50px);
+    width: 15px;
+}
+
+.toggle.active span:nth-child(1) {
+    width: 30px;
+    transform: translateX(0px) rotate(45deg);
+    transition-delay: 0.125;
+}
+.toggle.active span:nth-child(2) {
+    width: 30px;
+    transform: translateX(0px) rotate(315deg);
+    transition-delay: 0.125;
+}
+
+/* Drop down  */
+
+.dropdown {
+    position: relative;
+}
+.main-title {
+    text-align: center;
+    padding: 5px;
+}
+
+.subtitle-box {
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    min-width: 160px;
+}
+
+.sub-title {
+    line-height: 20px;
+    border: 2px solid #F9004D;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+
+.sub-title.active {
+    display: block;
+}
+
+/* Media Query  */
+
+@media (max-width: 992px) {
+    .toggle {
+        display: block;
+    }
+    .navbar-cover {
+        flex-wrap: wrap;
+    }
+    .navbar-social {
+        display: none;
+    }
+    .navbar-title {
+        width: 100%;
+        display: none;
+        text-align:left;
+    }
+    .navbar-title ul li {
+        flex: none;
+        display: block;
+    }
+    .navbar-title ul {
+        width: 100%;
+    }
+    .navbar-title.active {
+        display: block;
+    }
+
+    .footer-flex {
+        flex-wrap: wrap;
+    }
+    .footer-flex2 {
+        flex-wrap: wrap;
+    }
+    .footer-subscribe-sub button {
+        margin-top: 20px;
+    }
 }

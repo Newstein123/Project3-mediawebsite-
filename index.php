@@ -23,10 +23,44 @@
         <div class="nav-logo">
             <img src="Photos/voice_logo.png" alt="">
         </div>
+        <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="navbar-title text-black">
             <ul>
                 <li><a href="" class="active"> Home </a> </li>
-                <li><a href=""> Categories</a></li>
+                <li>
+                    <div class="dropdown">
+                        <div class="main-title">
+                       CATEGORY <span> <i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                        <div class="subtitle-box"> 
+                       <div class="sub-title">
+                        <ul>
+                            <li> <a href=""> Beauty </a> </li>
+                        </ul>
+                       </div>
+                       <div class="sub-title">
+                        <ul>
+                            <li> <a href=""> Health </a> </li>
+                        </ul>
+                       </div>
+                       <div class="sub-title">
+                        <ul>
+                            <li> <a href=""> Sports </a> </li>
+                        </ul>
+                       </div>
+                       <div class="sub-title">
+                        <ul>
+                            <li> <a href=""> Technology </a> </li>
+                        </ul>
+                       </div>
+                       </div>
+                    </div>
+                 
+                </li>
                 <li><a href=""> About</a></li>
                 <li><a href=""> Contact</a></li>
             </ul>       
@@ -78,6 +112,28 @@
         </div>
     </div>
     <!-- slider ends  -->
+
+    <!-- About us  -->
+
+    <div class="aboutus-container"> 
+        <div class="title text-white">
+           Why Choose <span style="color:#F9004D;"> Us </span>
+        </div>
+        <div class="para text-white"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, assumenda quia blanditiis dolor quod consequatur nihil dignissimos officiis voluptates. Quia cumque delectus unde sit praesentium officiis explicabo dolor quae veritatis.</div>
+        <button class="readmore"> Read More </button>
+    </div>
+
+    <!-- About us ends  -->
+
+    <!-- Category starts  -->
+    <div class="category">
+        <div class="card">
+            <div class="card-title"></div>
+            <div class="card-body"></div>
+            <div class="card-footer"></div>
+        </div>
+    </div>
+    <!-- Category ends  -->
     <!-- footer starts  -->
     <div class="footer">
         <div class="footer-cover"> 
@@ -138,6 +194,17 @@
                 <li> Videos </li>
             </ul>
         </div>
+        <div class="footer-text text-white">
+            <h1> Technology  </h1>
+            <ul>
+                <li>News </li>
+                <li>Lists </li>
+                <li> Features </li>
+                <li> Desktop </li>
+                <li> Mobile </li>
+                <li> Videos </li>
+            </ul>
+        </div>
         </div>
        
      <div class="arrow">
@@ -147,6 +214,14 @@
     </div>
 
     <!-- footer ends  -->
+    <script>
+      
+      let toggle = document.querySelector('.toggle');
+toggle.onclick = function() {
+    toggle.classList.toggle('active')
+    document.querySelector(".subtitle-box").classList.toggle("active");
+}
+       
 </script>
     <script src="JS/script.js"></script>
 </body>

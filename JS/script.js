@@ -54,3 +54,15 @@ document.querySelector(".arrow").onclick = () => {
     behavior: "smooth",
   });
 }
+
+// Toogle 
+
+let menutoggle = document.querySelector('.toggle');
+menutoggle.onclick = function() {
+    menutoggle.classList.toggle('active')
+    document.querySelector(".navbar-title").classList.toggle("active");
+}
+
+// Dropdown 
+
+    
