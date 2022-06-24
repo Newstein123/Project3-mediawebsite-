@@ -96,6 +96,11 @@ if (isset($_POST['btnsignup'])) {
       display: flex;
       justify-content: space-between;
     }
+    @media (max-width: 992px) {
+      form {
+        margin: 20px 20px;
+      }
+    }
   </style>
 </head>
 <body>

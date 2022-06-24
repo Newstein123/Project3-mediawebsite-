@@ -46,7 +46,7 @@
                         <div class="subtitle-box"> 
                        <div class="sub-title">
                         <ul>
-                            <li> <a href=""> Beauty </a> </li>
+                            <li> <a href="beauty.php"> Beauty </a> </li>
                         </ul>
                        </div>
                        <div class="sub-title">
@@ -62,6 +62,11 @@
                        <div class="sub-title">
                         <ul>
                             <li> <a href="tech.php"> Technology </a> </li>
+                        </ul>
+                       </div>
+                       <div class="sub-title">
+                        <ul>
+                            <li> <a href="others.php"> Others  </a> </li>
                         </ul>
                        </div>
                        </div>

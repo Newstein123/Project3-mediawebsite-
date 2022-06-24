@@ -101,8 +101,6 @@ if (isset($_POST['btnlogin'])) {
     .modal {
       width: 100%;
       height: 100vh;
-      justify-content: center;
-      align-items: center;
       color: white;
       line-height: 50px;
     }
@@ -122,6 +120,11 @@ if (isset($_POST['btnlogin'])) {
     .flex {
       display: flex;
       justify-content: space-between;
+    }
+    @media (max-width: 992px) {
+      form {
+        margin: 20px 20px;
+      }
     }
 </style>
 

@@ -70,6 +70,7 @@
     <!-- About us ends  -->
 
     <!-- Category starts  -->
+    <?php if(isset($_SESSION['auth'])):  ?>
     <div class="category"> 
     <h1 style="margin-bottom:40px;"> Category </h1>
     <div class="category-box text-white">
@@ -118,6 +119,9 @@
         </div>
         </div>
     </div>
+    <?php else: ?>
+        <h1 style="color: #fa3838; text-align:center"> Please Sign Up and Login to see Category Page </h1>
+    <?php endif?>
     <!-- Category ends  -->
     <?php include "layouts/footer.php" ?>
    
